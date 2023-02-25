@@ -1,0 +1,29 @@
+#!/bin/bash
+
+	#THIS SCRIPT WILL INSTALL CLASSIFER PYTHON MODULE WITH WHEEL POPULATE  IT WITH RUNNING IT ONCE AND  PRINT BASIC USAGE
+ 
+sudo apt install python-pip python-setuptools
+
+pip install --user wheel
+pip install --user classifier
+
+echo "PATH=\"\$HOME/.local/bin:\$PATH\"" >> ~/.bashrc
+
+. ~/.bashrc
+
+
+pip install --user --upgrade classifier
+
+
+print "Usage
+
+  Go to your directory, where you want to classify your files.
+  Run the following command in your terminal.
+
+$ classifier"; classifier
+
+
+echo " classifier [-dt] [-st SPECIFIC_TYPES [SPECIFIC_TYPES ...]] [-sf SPECIFIC_FOLDER] [-o OUTPUT] "
+
+
+printf " # Example: Classify specific file types # classifier -st py pyc -sf "Python Files" "
