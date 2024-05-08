@@ -1,7 +1,10 @@
 #!/bin/bash
+#Classifier-Python
 
 	#THIS SCRIPT WILL INSTALL CLASSIFIER, AND PRINT BASIC USAGE
- 
+
+# Requires Python3.4 - use venvipy
+
 sudo apt install python-pip python-setuptools
 
 echo "PATH=\"\$HOME/.local/bin:\$PATH\"" >> ~/.bashrc
